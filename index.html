@@ -8,8 +8,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./index.css">
 
-
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,120 +17,115 @@
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+<body>
+
 <div class="search-container">
-
     <input type="text" placeholder="Search anything...">
-
     <button class="icon-btn search-btn">
         <i class="fas fa-search"></i>
     </button>
-
     <button class="icon-btn mic-btn">
         <i class="fas fa-microphone"></i>
     </button>
-
     <label for="upload-image" class="icon-btn upload-btn">
         <i class="fas fa-image"></i>
     </label>
-
     <input type="file" id="upload-image" accept="image/*" hidden>
-
 </div>
-<body>
-<section class="hero">
 
+<!--================== HEADER ==================-->
+<header class="header">
+    <nav class="navbar">
+        <!-- Logo -->
+        <a href="#home" class="logo">
+            🌿 <span>Green Harvest</span>
+        </a>
+
+        <!-- Navigation -->
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      
+        <!-- Contact Button -->
+        <a href="#contact" class="contact-btn">
+            Contact Us
+        </a>
+
+        <!-- Mobile Menu -->
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<section class="hero" id="home">
     <div class="content">
-
         <h1>Organic Lifestyle <span>| जैविक जीवन</span></h1>
-
         <h2>Healthy Living Starts With Nature 🌿</h2>
-
         <p>
             Welcome to Organic Lifestyle, where sustainable farming,
             healthy food, and eco-friendly living come together.
             Discover the beauty of organic agriculture and protect
             nature for future generations.
         </p>
-
-        <a href="#" class="btn">Explore More</a>
-
+        <a href="#about" class="btn">Explore More</a>
     </div>
-
     <div class="image">
-
         <img src="farm.png" alt="Organic Tractor">
-
     </div>
-    
-
 </section>
+
 <!-- ================= ABOUT ================= -->
-
-<section class="about">
-
+<section class="about" id="about">
     <div class="about-heading">
         <h2>Why Choose Organic Lifestyle?</h2>
-
         <p>
             Organic farming promotes healthier food, protects nature,
             and supports sustainable agriculture for future generations.
         </p>
     </div>
-
     <div class="about-container">
-
         <div class="card">
             <img src="leaf-png.png" alt="Organic">
-
             <h3>100% Organic</h3>
-
             <p>
                 Naturally grown crops without harmful chemicals or pesticides.
             </p>
         </div>
-
         <div class="card">
             <img src="health.png" alt="Healthy">
-
             <h3>Healthy Food</h3>
-
             <p>
                 Fresh and nutritious food rich in vitamins and minerals.
             </p>
         </div>
-
         <div class="card">
             <img src="plant.png" alt="Nature">
-
             <h3>Eco Friendly</h3>
-
             <p>
                 Protecting the environment through sustainable farming methods.
             </p>
         </div>
-
         <div class="card">
             <img src="farmer.png" alt="Farmer">
-
             <h3>Support Farmers</h3>
-
             <p>
                 Helping local farmers grow naturally and improve livelihoods.
             </p>
         </div>
-
     </div>
-
 </section>
 
 
 
 <!--==================== IMAGE SLIDER ====================-->
-
-<section class="slider-section">
-
+<section class="slider-section" id="gallery">
     <div class="slider">
-
         <!-- Slide 1 -->
         <div class="slide active">
             <img src="organic farm-png.png" alt="Organic Farm">
@@ -141,7 +134,6 @@
                 <p>Healthy crops grown naturally without harmful chemicals.</p>
             </div>
         </div>
-
         <!-- Slide 2 -->
         <div class="slide">
             <img src="green organic field-png.png" alt="Green Fields">
@@ -150,7 +142,6 @@
                 <p>We believe in sustainable farming for a better future.</p>
             </div>
         </div>
-
         <!-- Slide 3 -->
         <div class="slide">
             <img src="farmer.png" alt="Farmer">
@@ -159,7 +150,6 @@
                 <p>Our experienced farmers care for every crop with passion.</p>
             </div>
         </div>
-
         <!-- Slide 4 -->
         <div class="slide">
             <img src="fresh vegetables-png.png" alt="Vegetables">
@@ -168,7 +158,6 @@
                 <p>Directly from our farms to your family.</p>
             </div>
         </div>
-
         <!-- Slide 5 -->
         <div class="slide">
             <img src="fresh fruite -png.png" alt="Organic Fruits">
@@ -177,88 +166,63 @@
                 <p>Rich in nutrition, freshness, and taste.</p>
             </div>
         </div>
-
     </div>
-
     <!-- Previous Button -->
     <button class="prev">&#10094;</button>
-
     <!-- Next Button -->
     <button class="next">&#10095;</button>
-
     <!-- Navigation Dots -->
     <div class="dots">
-
         <span class="dot active"></span>
-
         <span class="dot"></span>
-
         <span class="dot"></span>
-
         <span class="dot"></span>
-
         <span class="dot"></span>
-
     </div>
-
 </section>
+<script src="script.js"></script>
+</body>
+
 <!-- ================= FARMER SUPPORT SECTION ================= -->
-
 <section class="farmer-support">
-
     <div class="farmer-image">
         <img src="farmers.png" alt="Farmer">
     </div>
-
     <div class="farmer-content">
-
         <span class="tag"> Supporting Farmers</span>
-
         <h2>Empowering Farmers,<br>Growing a Better Tomorrow</h2>
-
         <p>
             At <strong>Organic Lifestyle</strong>, we believe that farmers are
             the heart of our nation. Every organic product you choose helps
             farming families, protects nature, and encourages sustainable
             agriculture for future generations.
         </p>
-
         <div class="feature-box">
-
             <div class="feature">
                 <h3> Chemical-Free Farming</h3>
                 <p>Promoting safe and natural farming practices.</p>
             </div>
-
             <div class="feature">
                 <h3> Modern Agriculture</h3>
                 <p>Helping farmers adopt eco-friendly technologies.</p>
             </div>
-
             <div class="feature">
                 <h3> Sustainable Future</h3>
                 <p>Protecting soil, water, and biodiversity.</p>
             </div>
-
             <div class="feature">
                 <h3> Community Support</h3>
                 <p>Building stronger farming communities together.</p>
             </div>
-
         </div>
-
-        <a href="#" class="support-btn">Support Our Mission</a>
-
+        <a href="#contact" class="support-btn">Support Our Mission</a>
     </div>
-
 </section>
-<!-- ===================== SLIDE 4 : Services ===================== -->
 
-<section class="fertilizer-section" id="fertilizers">
-
+<!-- ===================== SLIDE 4 : Services / Products ===================== -->
+<section class="fertilizer-section" id="services">
     <div class="container">
-
-        <div class="section-heading">
+        <div class="section-heading" id="products">
             <h2>🌿 Organic Fertilizers & Plant Nutrition</h2>
             <p>
                 Organic fertilizers improve soil fertility naturally, increase crop yield,
@@ -267,12 +231,10 @@
         </div>
 
         <div class="fertilizer-grid">
-
             <!-- Card 1 -->
             <div class="fertilizer-card">
                 <img src="vermicompost.png" alt="Vermicompost">
                 <h3>Vermicompost</h3>
-
                 <ul>
                     <li><strong>Uses:</strong> Vegetables, Fruits, Flowers</li>
                     <li><strong>Nutrients:</strong> Nitrogen, Phosphorus, Potassium</li>
@@ -282,12 +244,10 @@
                     <li><strong>Price:</strong> ₹10–15/kg</li>
                 </ul>
             </div>
-
             <!-- Card 2 -->
             <div class="fertilizer-card">
                 <img src="cow-dung.png" alt="Cow Dung Manure">
                 <h3>Cow Dung Manure</h3>
-
                 <ul>
                     <li><strong>Uses:</strong> All Crops</li>
                     <li><strong>Nutrients:</strong> Organic Carbon</li>
@@ -297,12 +257,10 @@
                     <li><strong>Price:</strong> ₹3–6/kg</li>
                 </ul>
             </div>
-
             <!-- Card 3 -->
             <div class="fertilizer-card">
                 <img src="neem cake.png" alt="Neem Cake">
                 <h3>Neem Cake</h3>
-
                 <ul>
                     <li><strong>Uses:</strong> Pest & Disease Control</li>
                     <li><strong>Nutrients:</strong> Nitrogen Rich</li>
@@ -312,12 +270,10 @@
                     <li><strong>Price:</strong> ₹35–50/kg</li>
                 </ul>
             </div>
-
             <!-- Card 4 -->
             <div class="fertilizer-card">
                 <img src="compost.png" alt="Compost">
                 <h3>Compost</h3>
-
                 <ul>
                     <li><strong>Uses:</strong> Garden & Field Crops</li>
                     <li><strong>Nutrients:</strong> Organic Matter</li>
@@ -327,13 +283,10 @@
                     <li><strong>Price:</strong> ₹8–12/kg</li>
                 </ul>
             </div>
-
-            
             <!-- Card 5 -->
             <div class="fertilizer-card">
                 <img src="mustard cake.png" alt="Mustard Cake">
                 <h3>Mustard Cake</h3>
-
                 <ul>
                     <li><strong>Uses:</strong> Vegetables & Fruit Plants</li>
                     <li><strong>Nutrients:</strong> Nitrogen</li>
@@ -343,17 +296,12 @@
                     <li><strong>Price:</strong> ₹40–50/kg</li>
                 </ul>
             </div>
-
         </div>
 
         <!-- Comparison Table -->
-
         <div class="comparison-table">
-
             <h2>📊 Fertilizer Comparison</h2>
-
             <table>
-
                 <tr>
                     <th>Fertilizer</th>
                     <th>Best For</th>
@@ -361,7 +309,6 @@
                     <th>Efficiency</th>
                     <th>Price</th>
                 </tr>
-
                 <tr>
                     <td>Vermicompost</td>
                     <td>Vegetables</td>
@@ -369,7 +316,6 @@
                     <td>⭐⭐⭐⭐⭐</td>
                     <td>₹12/kg</td>
                 </tr>
-
                 <tr>
                     <td>Cow Dung</td>
                     <td>All Crops</td>
@@ -377,7 +323,6 @@
                     <td>⭐⭐⭐⭐☆</td>
                     <td>₹5/kg</td>
                 </tr>
-
                 <tr>
                     <td>Neem Cake</td>
                     <td>Pest Control</td>
@@ -385,7 +330,6 @@
                     <td>⭐⭐⭐⭐⭐</td>
                     <td>₹45/kg</td>
                 </tr>
-
                 <tr>
                     <td>Compost</td>
                     <td>Garden Plants</td>
@@ -393,241 +337,140 @@
                     <td>⭐⭐⭐⭐☆</td>
                     <td>₹10/kg</td>
                 </tr>
-
             </table>
-
         </div>
 
         <!-- Application Steps -->
-
         <div class="application">
-
             <h2>🌱 How to Use Organic Fertilizers</h2>
-
             <div class="steps">
-
                 <div class="step">1️⃣ Prepare the Soil</div>
-
                 <div class="step">2️⃣ Mix Organic Manure</div>
-
                 <div class="step">3️⃣ Wait 7–10 Days</div>
-
                 <div class="step">4️⃣ Plant Seeds</div>
-
                 <div class="step">5️⃣ Apply Liquid Fertilizer Every 15–20 Days</div>
-
                 <div class="step">6️⃣ Harvest Healthy Crops 🌾</div>
-
             </div>
-
         </div>
 
         <!-- Benefits -->
-
         <div class="benefits">
-
             <h2>✅ Benefits of Organic Fertilizers</h2>
-
             <div class="benefit-list">
-
                 <div>🌿 Eco-Friendly</div>
-
                 <div>🌱 Improves Soil Fertility</div>
-
                 <div>💧 Better Water Retention</div>
-
                 <div>🍅 Chemical-Free Food</div>
-
                 <div>🦠 Increases Soil Microorganisms</div>
-
                 <div>🌍 Protects Environment</div>
-
                 <div>🌾 Higher Crop Quality</div>
-
                 <div>❤️ Safe for Humans & Animals</div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
-<script src="script.js"></script>
+
 
 <!--================ MANAGEMENT TEAM =================-->
-
 <section class="management">
-
     <h2>Meet Our Leadership Team</h2>
-
     <div class="management-container">
-
         <!-- CEO -->
-
         <div class="member">
-
-          
-
             <h3>Paras Saini</h3>
-
             <span>Founder & Chief Executive Officer (CEO)</span>
-
             <p>
                 Leads the company's vision and promotes sustainable organic farming.
             </p>
-
         </div>
-
         <!-- Co-Founder -->
-
         <div class="member">
-
-            
-
             <h3>Maulik Kayath</h3>
-
             <span>Co-Founder</span>
-
             <p>
                 Supports innovation, product development, and strategic planning.
             </p>
-
         </div>
-
         <!-- Head Manager -->
-
         <div class="member">
-
-            
-
             <h3>Naman Awasthy</h3>
-
             <span>Head Manager</span>
-
             <p>
                 Manages daily operations, customer support, and quality control.
             </p>
-
         </div>
-
     </div>
-
 </section>
-<!-- ===================== SLIDE 4 : Contact ===================== -->
 
-<section class="contact-support">
-
+<!-- ===================== CONTACT ===================== -->
+<section class="contact-support" id="contact">
     <div class="support-container">
-
         <div class="contact-left">
-
             <h2>🌿 Contact Support</h2>
-
             <p>Have questions about organic farming? We'd love to help you.</p>
-
             <form class="contact-form" id="contactForm">
-
                 <input type="text" id="name" placeholder="👤 Full Name" required>
-
                 <input type="email" id="email" placeholder="📧 Email Address" required>
-
                 <input type="tel" id="phone" placeholder="📞 Phone Number" required>
-
                 <select id="preference">
-
                     <option value="">🌱 Select Preference</option>
-
                     <option>Organic Fruits</option>
-
                     <option>Organic Vegetables</option>
-
                     <option>Organic Fertilizers</option>
-
                     <option>Seeds</option>
-
                     <option>Farmer Support</option>
-
                 </select>
-
                 <textarea id="message" rows="5" placeholder="💬 Write your message..."></textarea>
-
                 <button type="submit">Send Message</button>
-
             </form>
-
         </div>
-
+    </div>
 </section>
 
 <!--================ FOOTER =================-->
-
 <footer class="footer">
-
     <div class="footer-container">
-
         <!-- About -->
         <div class="footer-box">
-
             <h2>🌿 Green Harvest</h2>
-
             <p>
                 We are committed to promoting sustainable organic farming,
                 healthy crops, and eco-friendly agricultural practices for a
                 greener future.
             </p>
-
         </div>
-
         
         <!-- Contact -->
         <div class="footer-box">
-
             <h3>Contact Us</h3>
-
             <p>📍 shahjahanpur, Rajasthan, India</p>
-
             <p>📞 +91 99295 14433</p>
-
             <p>📧 support@organiclifestyle.com</p>
-
             <p>🕘 Mon - Sat : 9:00 AM - 6:00 PM</p>
-
         </div>
 
         <!-- Social -->
         <div class="footer-box">
-
             <h3>Follow Us</h3>
-
             <div class="social-icons">
-
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
-
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
-
                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
-
             </div>
-
         </div>
-
     </div>
 
     <hr>
 
     <div class="footer-bottom">
-
         <p>
             © 2026 Green Harvest | Organic Farming Website |
             Designed by <strong>Paras Saini</strong>
         </p>
-
     </div>
-
 </footer>
+
 
 </html>
