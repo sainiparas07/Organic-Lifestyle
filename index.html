@@ -1,476 +1,941 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organic Lifestyle</title>
+    <title>Organic Lifestyle | Green Harvest</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="index.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 <body>
 
-<div class="search-container">
-    <input type="text" placeholder="Search anything...">
-    <button class="icon-btn search-btn">
-        <i class="fas fa-search"></i>
-    </button>
-    <button class="icon-btn mic-btn">
-        <i class="fas fa-microphone"></i>
-    </button>
-    <label for="upload-image" class="icon-btn upload-btn">
-        <i class="fas fa-image"></i>
-    </label>
-    <input type="file" id="upload-image" accept="image/*" hidden>
-</div>
+    <!-- ================= HEADER ================= -->
 
-<!--================== HEADER ==================-->
-<header class="header">
-    <nav class="navbar">
-        <!-- Logo -->
-        <a href="#home" class="logo">
-            🌿 <span>Green Harvest</span>
-        </a>
+    <header class="header">
 
-        <!-- Navigation -->
-        <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-      
-        <!-- Contact Button -->
-        <a href="#contact" class="contact-btn">
-            Contact Us
-        </a>
+        <nav class="navbar">
 
-        <!-- Mobile Menu -->
-        <div class="menu-btn">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </nav>
-</header>
+            <!-- Logo -->
 
-<section class="hero" id="home">
-    <div class="content">
-        <h1>Organic Lifestyle <span>| जैविक जीवन</span></h1>
-        <h2>Healthy Living Starts With Nature 🌿</h2>
-        <p>
-            Welcome to Organic Lifestyle, where sustainable farming,
-            healthy food, and eco-friendly living come together.
-            Discover the beauty of organic agriculture and protect
-            nature for future generations.
-        </p>
-        <a href="#about" class="btn">Explore More</a>
+            <a href="#home" class="logo">
+                🌿 Organic Lifestyle
+            </a>
+
+            <!-- Navigation -->
+
+            <ul class="nav-links">
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#gallery">Gallery</a></li>
+
+                <li><a href="#services">Services</a></li>
+
+                <li><a href="#products">Products</a></li>
+
+                <li><a href="#crop-calendar">Crop Calendar</a></li>
+
+                <li><a href="#blog">Agriculture Blog</a></li>
+
+                <li><a href="#team">Leadership Team</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+            <!-- Contact Button -->
+
+            <a href="#contact" class="contact-btn">
+                Contact Us
+            </a>
+
+            <!-- Mobile Menu -->
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= SEARCH BAR ================= -->
+
+    <div class="search-container">
+
+        <input type="text"
+            placeholder="Search crops, fertilizers, blogs, services...">
+
+        <button class="icon-btn">
+            <i class="fas fa-search"></i>
+        </button>
+
+        <button class="icon-btn">
+            <i class="fas fa-microphone"></i>
+        </button>
+
+        <label for="upload-image" class="icon-btn">
+            <i class="fas fa-image"></i>
+        </label>
+
+        <input type="file" id="upload-image" hidden>
+
     </div>
-    <div class="image">
-        <img src="farm.png" alt="Organic Tractor">
-    </div>
-</section>
 
-<!-- ================= ABOUT ================= -->
-<section class="about" id="about">
-    <div class="about-heading">
-        <h2>Why Choose Organic Lifestyle?</h2>
-        <p>
-            Organic farming promotes healthier food, protects nature,
-            and supports sustainable agriculture for future generations.
-        </p>
-    </div>
-    <div class="about-container">
-        <div class="card">
-            <img src="leaf-png.png" alt="Organic">
-            <h3>100% Organic</h3>
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="content">
+
+            <h1>
+                Organic Lifestyle
+                <span>| जैविक जीवन</span>
+            </h1>
+
+            <h2>
+                Healthy Living Starts With Nature 🌿
+            </h2>
+
             <p>
-                Naturally grown crops without harmful chemicals or pesticides.
+                Welcome to Organic Lifestyle, your trusted platform for
+                sustainable farming, organic products, crop guidance,
+                agricultural knowledge, and eco-friendly living.
+                Together we can create a greener and healthier future.
             </p>
+
+            <a href="#about" class="btn">
+                Explore More
+            </a>
+
         </div>
-        <div class="card">
-            <img src="health.png" alt="Healthy">
-            <h3>Healthy Food</h3>
+
+        <div class="image">
+
+            <img src="photos/farm.png" alt="Organic Farming">
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section class="about" id="about">
+
+        <div class="section-heading">
+
+            <h2>Why Choose Organic Lifestyle?</h2>
+
             <p>
-                Fresh and nutritious food rich in vitamins and minerals.
+                Organic farming protects nature, improves soil fertility,
+                and provides healthy food without harmful chemicals.
             </p>
+
         </div>
-        <div class="card">
-            <img src="plant.png" alt="Nature">
-            <h3>Eco Friendly</h3>
-            <p>
-                Protecting the environment through sustainable farming methods.
-            </p>
+
+        <div class="about-container">
+
+            <div class="card">
+
+                <img src="photos/leaf.png" alt="Organic">
+
+                <h3>100% Organic</h3>
+
+                <p>
+                    Naturally grown crops without harmful pesticides
+                    and synthetic chemicals.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="photos/health.png" alt="Healthy Food">
+
+                <h3>Healthy Food</h3>
+
+                <p>
+                    Fresh, nutritious, and chemical-free food
+                    for a healthier lifestyle.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="photos/plant.png" alt="Eco Friendly">
+
+                <h3>Eco Friendly</h3>
+
+                <p>
+                    Sustainable farming methods that protect
+                    soil, water, and biodiversity.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="photos/farmer.png" alt="Farmers">
+
+                <h3>Support Farmers</h3>
+
+                <p>
+                    Empowering local farmers with better
+                    opportunities and modern farming practices.
+                </p>
+
+            </div>
+
         </div>
-        <div class="card">
-            <img src="farmer.png" alt="Farmer">
-            <h3>Support Farmers</h3>
-            <p>
-                Helping local farmers grow naturally and improve livelihoods.
-            </p>
-        </div>
-    </div>
-</section>
+
+    </section>
+
+    <!-- ================= GALLERY SECTION ================= -->
+
+    <section class="slider-section" id="gallery">
+
+        <div class="slider">
+
+            <div class="slide active">
+
+                <img src="photos/organic farm.png" alt="Organic Farm">
+
+                <div class="caption">
+
+                    <h2>Fresh Organic Farming</h2>
+
+                    <p>
+                        Healthy crops grown naturally without harmful chemicals.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="slide">
+
+                <img src="photos/green organic field.png" alt="Green Field">
+
+                <div class="caption">
+
+                    <h2>Green & Healthy Fields</h2>
+
+                    <p>
+                        Sustainable agriculture for future generations.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="slide">
+
+                <img src="photos/farmer.png" alt="Farmer">
+
+                <div class="caption">
+
+                    <h2>Dedicated Farmers</h2>
+
+                    <p>
+                        Experienced farmers caring for every crop with passion.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="slide">
+
+                <img src="photos/fresh vegetables.png" alt="Vegetables">
+
+                <div class="caption">
+
+                    <h2>Fresh Organic Vegetables</h2>
+
+                    <p>
+                        Directly from farms to your family table.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="slide">
+
+                <img src="photos/fresh fruits.png" alt="Fruits">
+
+                <div class="caption">
+
+                    <h2>Natural Organic Fruits</h2>
+
+                    <p>
+                        Rich in nutrition, freshness, and natural taste.
+                    </p>
+
+                </div>
+
+            </div>
 
 
+             <button class="prev">&#10094;</button>
 
-<!--==================== IMAGE SLIDER ====================-->
-<section class="slider-section" id="gallery">
-    <div class="slider">
-        <!-- Slide 1 -->
-        <div class="slide active">
-            <img src="organic farm-png.png" alt="Organic Farm">
-            <div class="caption">
-                <h2>Fresh Organic Farming</h2>
-                <p>Healthy crops grown naturally without harmful chemicals.</p>
-            </div>
-        </div>
-        <!-- Slide 2 -->
-        <div class="slide">
-            <img src="green organic field-png.png" alt="Green Fields">
-            <div class="caption">
-                <h2>Green & Healthy Fields</h2>
-                <p>We believe in sustainable farming for a better future.</p>
-            </div>
-        </div>
-        <!-- Slide 3 -->
-        <div class="slide">
-            <img src="farmer.png" alt="Farmer">
-            <div class="caption">
-                <h2>Dedicated Farmers</h2>
-                <p>Our experienced farmers care for every crop with passion.</p>
-            </div>
-        </div>
-        <!-- Slide 4 -->
-        <div class="slide">
-            <img src="fresh vegetables-png.png" alt="Vegetables">
-            <div class="caption">
-                <h2>Fresh Organic Vegetables</h2>
-                <p>Directly from our farms to your family.</p>
-            </div>
-        </div>
-        <!-- Slide 5 -->
-        <div class="slide">
-            <img src="fresh fruite -png.png" alt="Organic Fruits">
-            <div class="caption">
-                <h2>Natural Organic Fruits</h2>
-                <p>Rich in nutrition, freshness, and taste.</p>
-            </div>
-        </div>
-    </div>
-    <!-- Previous Button -->
-    <button class="prev">&#10094;</button>
-    <!-- Next Button -->
-    <button class="next">&#10095;</button>
-    <!-- Navigation Dots -->
-    <div class="dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-</section>
-<script src="script.js"></script>
-</body>
+             <button class="next">&#10095;</button>
 
-<!-- ================= FARMER SUPPORT SECTION ================= -->
-<section class="farmer-support">
+            
+
+        </div>
+
+        <div class="dots">
+
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FARMER SUPPORT ================= -->
+
+<section class="farmer-support" id="services">
+
     <div class="farmer-image">
-        <img src="farmers.png" alt="Farmer">
+        <img src="photos/farmers.png" alt="Farmer Support">
     </div>
+
     <div class="farmer-content">
-        <span class="tag"> Supporting Farmers</span>
-        <h2>Empowering Farmers,<br>Growing a Better Tomorrow</h2>
+
+        <span class="tag">🌿 Supporting Farmers</span>
+
+        <h2>
+            Empowering Farmers,
+            Growing A Better Tomorrow
+        </h2>
+
         <p>
-            At <strong>Organic Lifestyle</strong>, we believe that farmers are
-            the heart of our nation. Every organic product you choose helps
-            farming families, protects nature, and encourages sustainable
-            agriculture for future generations.
+            Green Harvest supports farmers through sustainable agriculture,
+            modern organic techniques, and eco-friendly farming solutions.
         </p>
+
         <div class="feature-box">
+
             <div class="feature">
-                <h3> Chemical-Free Farming</h3>
-                <p>Promoting safe and natural farming practices.</p>
+                <h3>🌱 Organic Farming</h3>
+                <p>Safe and natural farming practices.</p>
             </div>
+
             <div class="feature">
-                <h3> Modern Agriculture</h3>
-                <p>Helping farmers adopt eco-friendly technologies.</p>
+                <h3>🚜 Smart Agriculture</h3>
+                <p>Modern technology for better yields.</p>
             </div>
+
             <div class="feature">
-                <h3> Sustainable Future</h3>
-                <p>Protecting soil, water, and biodiversity.</p>
+                <h3>🌍 Sustainable Future</h3>
+                <p>Protecting nature and soil fertility.</p>
             </div>
+
             <div class="feature">
-                <h3> Community Support</h3>
-                <p>Building stronger farming communities together.</p>
+                <h3>🤝 Farmer Community</h3>
+                <p>Building stronger farming networks.</p>
             </div>
+
         </div>
-        <a href="#contact" class="support-btn">Support Our Mission</a>
+
+        <a href="#contact" class="support-btn">
+            Support Our Mission
+        </a>
+
     </div>
+
 </section>
 
-<!-- ===================== SLIDE 4 : Services / Products ===================== -->
-<section class="fertilizer-section" id="services">
-    <div class="container">
-        <div class="section-heading" id="products">
-            <h2>🌿 Organic Fertilizers & Plant Nutrition</h2>
+<!-- ================= SERVICES ================= -->
+
+<section class="services-section">
+
+    <div class="section-heading">
+
+        <h2>🌿 Our Services</h2>
+
+        <p>
+            Helping farmers and agriculture enthusiasts with practical
+            solutions and expert guidance.
+        </p>
+
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <i class="fas fa-seedling"></i>
+            <h3>Organic Farming Guidance</h3>
+            <p>Professional support for sustainable farming.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-leaf"></i>
+            <h3>Crop Recommendation</h3>
+            <p>Season and location based crop suggestions.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-cloud-sun-rain"></i>
+            <h3>Weather Insights</h3>
+            <p>Weather information for better planning.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-user-graduate"></i>
+            <h3>Farmer Training</h3>
+            <p>Educational support and awareness programs.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="fertilizer-section" id="products">
+
+    <div class="section-heading">
+
+        <h2>🌿 Organic Products</h2>
+
+        <p>
+            Natural fertilizers and plant nutrition products
+            for healthy crop growth.
+        </p>
+
+    </div>
+
+    <div class="fertilizer-grid">
+
+        <div class="fertilizer-card">
+
+            <img src="photos/vermicompost.png" alt="Vermicompost">
+
+            <h3>Vermicompost</h3>
+
+            <ul>
+                <li>Vegetables & Fruits</li>
+                <li>NPK Rich</li>
+                <li>⭐⭐⭐⭐⭐</li>
+                <li>₹10 - ₹15/kg</li>
+            </ul>
+
+        </div>
+
+        <div class="fertilizer-card">
+
+            <img src="photos/cow-dung.png" alt="Cow Dung">
+
+            <h3>Cow Dung Manure</h3>
+
+            <ul>
+                <li>All Crops</li>
+                <li>Organic Carbon Rich</li>
+                <li>⭐⭐⭐⭐☆</li>
+                <li>₹3 - ₹6/kg</li>
+            </ul>
+
+        </div>
+
+        <div class="fertilizer-card">
+
+            <img src="photos/neem cake.png" alt="Neem Cake">
+
+            <h3>Neem Cake</h3>
+
+            <ul>
+                <li>Pest Control</li>
+                <li>Nitrogen Rich</li>
+                <li>⭐⭐⭐⭐⭐</li>
+                <li>₹35 - ₹50/kg</li>
+            </ul>
+
+        </div>
+
+        <div class="fertilizer-card">
+
+            <img src="photos/compost.png" alt="Compost">
+
+            <h3>Compost</h3>
+
+            <ul>
+                <li>Garden & Field Crops</li>
+                <li>Organic Matter Rich</li>
+                <li>⭐⭐⭐⭐☆</li>
+                <li>₹8 - ₹12/kg</li>
+            </ul>
+
+        </div>
+
+        <div class="fertilizer-card">
+
+            <img src="photos/mustard cake.png" alt="Mustard Cake">
+
+            <h3>Mustard Cake</h3>
+
+            <ul>
+                <li>Fruit & Vegetable Plants</li>
+                <li>Nitrogen Rich</li>
+                <li>⭐⭐⭐⭐⭐</li>
+                <li>₹40 - ₹50/kg</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CROP CALENDAR ================= -->
+
+<section class="crop-calendar" id="crop-calendar">
+
+    <div class="section-heading">
+        <h2>Crop Calendar</h2>
+        <p>
+            A simple seasonal planning guide. Actual sowing dates should be
+            adjusted according to local climate, soil and crop variety.
+        </p>
+    </div>
+
+    <div class="calendar-table-container">
+
+        <table class="crop-table">
+
+            <thead>
+                <tr>
+                    <th>Crop</th>
+                    <th>Season</th>
+                    <th>Sowing Period</th>
+                    <th>Harvest Period</th>
+                    <th>Basic Note</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Wheat</td>
+                    <td><span class="season-tag">Rabi</span></td>
+                    <td>Oct–Dec</td>
+                    <td>Mar–Apr</td>
+                    <td>Needs suitable soil moisture and cool weather.</td>
+                </tr>
+
+                <tr>
+                    <td>Mustard</td>
+                    <td><span class="season-tag">Rabi</span></td>
+                    <td>Oct–Nov</td>
+                    <td>Feb–Mar</td>
+                    <td>Common winter oilseed crop.</td>
+                </tr>
+
+                <tr>
+                    <td>Gram</td>
+                    <td><span class="season-tag">Rabi</span></td>
+                    <td>Oct–Nov</td>
+                    <td>Feb–Mar</td>
+                    <td>Suitable for comparatively dry conditions.</td>
+                </tr>
+
+                <tr>
+                    <td>Rice</td>
+                    <td><span class="season-tag kharif">Kharif</span></td>
+                    <td>Jun–Jul</td>
+                    <td>Sep–Nov</td>
+                    <td>Requires adequate water availability.</td>
+                </tr>
+
+                <tr>
+                    <td>Maize</td>
+                    <td><span class="season-tag kharif">Kharif</span></td>
+                    <td>Jun–Jul</td>
+                    <td>Sep–Oct</td>
+                    <td>Plan according to rainfall and local variety.</td>
+                </tr>
+
+                <tr>
+                    <td>Cotton</td>
+                    <td><span class="season-tag kharif">Kharif</span></td>
+                    <td>Apr–Jun</td>
+                    <td>Oct–Jan</td>
+                    <td>Warm-season crop with a longer growing period.</td>
+                </tr>
+
+                <tr>
+                    <td>Tomato</td>
+                    <td><span class="season-tag multiple">Multiple</span></td>
+                    <td>Varies by region</td>
+                    <td>Varies by variety</td>
+                    <td>Use a locally suitable variety and planting window.</td>
+                </tr>
+
+                <tr>
+                    <td>Potato</td>
+                    <td><span class="season-tag">Rabi</span></td>
+                    <td>Oct–Nov</td>
+                    <td>Jan–Mar</td>
+                    <td>Cool-season vegetable crop.</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- ================= AGRICULTURE BLOG ================= -->
+
+<section class="agriculture-blog" id="blog">
+
+    <div class="section-heading">
+        <h2>Agriculture Blog</h2>
+        <p>Latest farming insights, crop management tips and organic agriculture knowledge.</p>
+    </div>
+
+    <div class="featured-blog">
+
+        <img src="images/blog-featured.jpg" alt="Organic Farming">
+
+        <div class="featured-content">
+
+            <span class="blog-tag">Featured Article</span>
+
+            <h3>Modern Organic Farming Techniques for Higher Yield</h3>
+
             <p>
-                Organic fertilizers improve soil fertility naturally, increase crop yield,
-                protect the environment, and produce healthy chemical-free food.
+                Discover sustainable farming methods, natural fertilizers,
+                composting techniques and eco-friendly crop protection.
             </p>
+
+            <a href="#" class="blog-btn">Read Full Article</a>
+
         </div>
 
-        <div class="fertilizer-grid">
-            <!-- Card 1 -->
-            <div class="fertilizer-card">
-                <img src="vermicompost.png" alt="Vermicompost">
-                <h3>Vermicompost</h3>
-                <ul>
-                    <li><strong>Uses:</strong> Vegetables, Fruits, Flowers</li>
-                    <li><strong>Nutrients:</strong> Nitrogen, Phosphorus, Potassium</li>
-                    <li><strong>Apply:</strong> Before sowing or planting</li>
-                    <li><strong>Time:</strong> Every 45–60 days</li>
-                    <li><strong>Efficiency:</strong> ⭐⭐⭐⭐⭐</li>
-                    <li><strong>Price:</strong> ₹10–15/kg</li>
-                </ul>
-            </div>
-            <!-- Card 2 -->
-            <div class="fertilizer-card">
-                <img src="cow-dung.png" alt="Cow Dung Manure">
-                <h3>Cow Dung Manure</h3>
-                <ul>
-                    <li><strong>Uses:</strong> All Crops</li>
-                    <li><strong>Nutrients:</strong> Organic Carbon</li>
-                    <li><strong>Apply:</strong> Mix with soil</li>
-                    <li><strong>Time:</strong> Every 2–3 months</li>
-                    <li><strong>Efficiency:</strong> ⭐⭐⭐⭐☆</li>
-                    <li><strong>Price:</strong> ₹3–6/kg</li>
-                </ul>
-            </div>
-            <!-- Card 3 -->
-            <div class="fertilizer-card">
-                <img src="neem cake.png" alt="Neem Cake">
-                <h3>Neem Cake</h3>
-                <ul>
-                    <li><strong>Uses:</strong> Pest & Disease Control</li>
-                    <li><strong>Nutrients:</strong> Nitrogen Rich</li>
-                    <li><strong>Apply:</strong> Around root zone</li>
-                    <li><strong>Time:</strong> Every Month</li>
-                    <li><strong>Efficiency:</strong> ⭐⭐⭐⭐⭐</li>
-                    <li><strong>Price:</strong> ₹35–50/kg</li>
-                </ul>
-            </div>
-            <!-- Card 4 -->
-            <div class="fertilizer-card">
-                <img src="compost.png" alt="Compost">
-                <h3>Compost</h3>
-                <ul>
-                    <li><strong>Uses:</strong> Garden & Field Crops</li>
-                    <li><strong>Nutrients:</strong> Organic Matter</li>
-                    <li><strong>Apply:</strong> Mix before planting</li>
-                    <li><strong>Time:</strong> Every 60 days</li>
-                    <li><strong>Efficiency:</strong> ⭐⭐⭐⭐☆</li>
-                    <li><strong>Price:</strong> ₹8–12/kg</li>
-                </ul>
-            </div>
-            <!-- Card 5 -->
-            <div class="fertilizer-card">
-                <img src="mustard cake.png" alt="Mustard Cake">
-                <h3>Mustard Cake</h3>
-                <ul>
-                    <li><strong>Uses:</strong> Vegetables & Fruit Plants</li>
-                    <li><strong>Nutrients:</strong> Nitrogen</li>
-                    <li><strong>Apply:</strong> Liquid Fertilizer</li>
-                    <li><strong>Time:</strong> Every 20 Days</li>
-                    <li><strong>Efficiency:</strong> ⭐⭐⭐⭐⭐</li>
-                    <li><strong>Price:</strong> ₹40–50/kg</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Comparison Table -->
-        <div class="comparison-table">
-            <h2>📊 Fertilizer Comparison</h2>
-            <table>
-                <tr>
-                    <th>Fertilizer</th>
-                    <th>Best For</th>
-                    <th>Duration</th>
-                    <th>Efficiency</th>
-                    <th>Price</th>
-                </tr>
-                <tr>
-                    <td>Vermicompost</td>
-                    <td>Vegetables</td>
-                    <td>60 Days</td>
-                    <td>⭐⭐⭐⭐⭐</td>
-                    <td>₹12/kg</td>
-                </tr>
-                <tr>
-                    <td>Cow Dung</td>
-                    <td>All Crops</td>
-                    <td>90 Days</td>
-                    <td>⭐⭐⭐⭐☆</td>
-                    <td>₹5/kg</td>
-                </tr>
-                <tr>
-                    <td>Neem Cake</td>
-                    <td>Pest Control</td>
-                    <td>45 Days</td>
-                    <td>⭐⭐⭐⭐⭐</td>
-                    <td>₹45/kg</td>
-                </tr>
-                <tr>
-                    <td>Compost</td>
-                    <td>Garden Plants</td>
-                    <td>60 Days</td>
-                    <td>⭐⭐⭐⭐☆</td>
-                    <td>₹10/kg</td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- Application Steps -->
-        <div class="application">
-            <h2>🌱 How to Use Organic Fertilizers</h2>
-            <div class="steps">
-                <div class="step">1️⃣ Prepare the Soil</div>
-                <div class="step">2️⃣ Mix Organic Manure</div>
-                <div class="step">3️⃣ Wait 7–10 Days</div>
-                <div class="step">4️⃣ Plant Seeds</div>
-                <div class="step">5️⃣ Apply Liquid Fertilizer Every 15–20 Days</div>
-                <div class="step">6️⃣ Harvest Healthy Crops 🌾</div>
-            </div>
-        </div>
-
-        <!-- Benefits -->
-        <div class="benefits">
-            <h2>✅ Benefits of Organic Fertilizers</h2>
-            <div class="benefit-list">
-                <div>🌿 Eco-Friendly</div>
-                <div>🌱 Improves Soil Fertility</div>
-                <div>💧 Better Water Retention</div>
-                <div>🍅 Chemical-Free Food</div>
-                <div>🦠 Increases Soil Microorganisms</div>
-                <div>🌍 Protects Environment</div>
-                <div>🌾 Higher Crop Quality</div>
-                <div>❤️ Safe for Humans & Animals</div>
-            </div>
-        </div>
     </div>
+
+    <div class="blog-container">
+
+        <div class="blog-card">
+
+            <img src="images/blog1.jpg" alt="Organic Farming">
+
+            <span class="blog-category">Organic Farming</span>
+
+            <h3>Benefits of Organic Farming</h3>
+
+            <p>
+                Learn how organic farming improves soil health,
+                biodiversity and food quality.
+            </p>
+
+            <div class="blog-footer">
+                <span class="blog-date"></span>
+                <a href="#">Read More →</a>
+            </div>
+
+        </div>
+
+        <div class="blog-card">
+
+            <img src="images/blog2.jpg" alt="Crop Management">
+
+            <span class="blog-category">Crop Care</span>
+
+            <h3>Crop Rotation Strategies</h3>
+
+            <p>
+                Improve productivity and reduce pests through
+                scientific crop rotation methods.
+            </p>
+
+            <div class="blog-footer">
+                <span class="blog-date"></span>
+                <a href="#">Read More →</a>
+            </div>
+
+        </div>
+
+        <div class="blog-card">
+
+            <img src="images/blog3.jpg" alt="Fertilizer">
+
+            <span class="blog-category">Fertilizers</span>
+
+            <h3>Using Vermicompost Effectively</h3>
+
+            <p>
+                Understand proper vermicompost application
+                for healthier crop growth.
+            </p>
+
+            <div class="blog-footer">
+                <span class="blog-date"></span>
+                <a href="#">Read More →</a>
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
+<!-- ================= LEADERSHIP TEAM ================= -->
 
+<section class="management" id="team">
 
-<!--================ MANAGEMENT TEAM =================-->
-<section class="management">
-    <h2>Meet Our Leadership Team</h2>
+    <div class="section-heading">
+
+        <h2>👨‍💼 Meet Our Leadership Team</h2>
+
+        <p>
+            The people driving Green Harvest towards a greener and healthier future.
+        </p>
+
+    </div>
+
     <div class="management-container">
-        <!-- CEO -->
-        <div class="member">
-            <h3>Paras Saini</h3>
-            <span>Founder & Chief Executive Officer (CEO)</span>
-            <p>
-                Leads the company's vision and promotes sustainable organic farming.
-            </p>
-        </div>
-        <!-- Co-Founder -->
-        <div class="member">
-            <h3>Maulik Kayath</h3>
-            <span>Co-Founder</span>
-            <p>
-                Supports innovation, product development, and strategic planning.
-            </p>
-        </div>
-        <!-- Head Manager -->
-        <div class="member">
-            <h3>Naman Awasthy</h3>
-            <span>Head Manager</span>
-            <p>
-                Manages daily operations, customer support, and quality control.
-            </p>
-        </div>
-    </div>
-</section>
 
-<!-- ===================== CONTACT ===================== -->
-<section class="contact-support" id="contact">
-    <div class="support-container">
-        <div class="contact-left">
-            <h2>🌿 Contact Support</h2>
-            <p>Have questions about organic farming? We'd love to help you.</p>
-            <form class="contact-form" id="contactForm">
-                <input type="text" id="name" placeholder="👤 Full Name" required>
-                <input type="email" id="email" placeholder="📧 Email Address" required>
-                <input type="tel" id="phone" placeholder="📞 Phone Number" required>
-                <select id="preference">
-                    <option value="">🌱 Select Preference</option>
-                    <option>Organic Fruits</option>
-                    <option>Organic Vegetables</option>
-                    <option>Organic Fertilizers</option>
-                    <option>Seeds</option>
-                    <option>Farmer Support</option>
-                </select>
-                <textarea id="message" rows="5" placeholder="💬 Write your message..."></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </div>
-</section>
+        <div class="member">
 
-<!--================ FOOTER =================-->
-<footer class="footer">
-    <div class="footer-container">
-        <!-- About -->
-        <div class="footer-box">
-            <h2>🌿 Green Harvest</h2>
-            <p>
-                We are committed to promoting sustainable organic farming,
-                healthy crops, and eco-friendly agricultural practices for a
-                greener future.
-            </p>
-        </div>
-        
-        <!-- Contact -->
-        <div class="footer-box">
-            <h3>Contact Us</h3>
-            <p>📍 shahjahanpur, Rajasthan, India</p>
-            <p>📞 +91 99295 14433</p>
-            <p>📧 support@organiclifestyle.com</p>
-            <p>🕘 Mon - Sat : 9:00 AM - 6:00 PM</p>
-        </div>
-
-        <!-- Social -->
-        <div class="footer-box">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <div class="member-img">
+                <img src="photos/ceo.jpg" alt="Paras Saini">
             </div>
+
+            <h3>Paras Saini</h3>
+
+            <span>Founder & CEO</span>
+
+            <p>
+                Leading innovation in organic farming and sustainable agriculture.
+            </p>
+
         </div>
+
+        <div class="member">
+
+            <div class="member-img">
+                <img src="photos/cofounder.jpg" alt="Maulik Kayath">
+            </div>
+
+            <h3>Maulik Kayath</h3>
+
+            <span>Co-Founder</span>
+
+            <p>
+                Focused on growth strategies, technology, and project development.
+            </p>
+
+        </div>
+
+        <div class="member">
+
+            <div class="member-img">
+                <img src="photos/manager.jpg" alt="Naman Awasthy">
+            </div>
+
+            <h3>Naman Awasthy</h3>
+
+            <span>Head Manager</span>
+
+            <p>
+                Managing operations, customer support, and quality assurance.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-support" id="contact">
+
+    <div class="support-container">
+
+        <div class="contact-left">
+
+            <h2>🌿 Contact Us</h2>
+
+            <p>
+                Have a question about organic farming, products, or services?
+                Get in touch with us.
+            </p>
+
+            <form class="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="👤 Full Name"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="📧 Email Address"
+                    required>
+
+                <input
+                    type="tel"
+                    placeholder="📞 Phone Number"
+                    required>
+
+                <select>
+
+                    <option>Select Topic</option>
+
+                    <option>Organic Farming</option>
+
+                    <option>Products</option>
+
+                    <option>Farmer Support</option>
+
+                    <option>Crop Recommendation</option>
+
+                    <option>General Query</option>
+
+                </select>
+
+                <textarea
+                    rows="5"
+                    placeholder="💬 Write your message..."></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- About -->
+
+        <div class="footer-box">
+
+            <h2>🌿 Green Harvest</h2>
+
+            <p>
+                Promoting organic farming, sustainable agriculture,
+                healthy food, and a greener future.
+            </p>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#gallery">Gallery</a></li>
+
+                <li><a href="#services">Services</a></li>
+
+                <li><a href="#products">Products</a></li>
+
+                <li><a href="#crop-calendar">Crop Calendar</a></li>
+
+                <li><a href="#blog">Agriculture Blog</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact Information -->
+
+        <div class="footer-box">
+
+            <h3>Contact Info</h3>
+
+            <p>📍 Shahjahanpur, Rajasthan, India</p>
+
+            <p>📞 +91 99295 14433</p>
+
+            <p>📧 support@greenharvest.com</p>
+
+        </div>
+
+        <!-- Social Media -->
+
+        <div class="footer-box">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+
     </div>
 
     <hr>
 
     <div class="footer-bottom">
+
         <p>
-            © 2026 Green Harvest | Organic Farming Website |
+            © 2026 Green Harvest | Organic Lifestyle |
             Designed by <strong>Paras Saini</strong>
         </p>
+
     </div>
+
 </footer>
 
+<!-- ================= JAVASCRIPT ================= -->
 
+<script src="script.js"></script>
+
+</body>
 </html>
